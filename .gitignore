@@ -1,0 +1,12 @@
+# JetBrains Config
+.idea
+
+# VSCode Config
+.vscode
+
+# Python Caches
+**/__pycache__/
+
+# Videos
+/videos/
+downloaded_videos.txt
