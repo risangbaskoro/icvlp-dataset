@@ -26,6 +26,14 @@ class ObjectWrapper:
                 result[key] = value.to_dict() if isinstance(value, ObjectWrapper) else value
         return result
 
+    def to_json(self) -> str:
+        r""" Serializes data to JSON formatted string.
+
+        Returns:
+            str
+        """
+        return json.dumps(self.to_dict(), indent=2)
+
     def __repr__(self):
         class_name = self.__class__.__name__
         attributes = ', '.join(f"{key}={getattr(self, key)}" for key in self.__dict__)
