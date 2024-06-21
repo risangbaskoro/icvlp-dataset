@@ -130,10 +130,10 @@ class ICVLP(ObjectWrapper):
 
     @classmethod
     def from_json(cls, json_filepath: str):
-        r""" Populate videos with data from json file.
+        r""" Populate videos with data from JSON file.
 
         Arguments:
-            json_filepath (str): Path to json file.
+            json_filepath (str): Path to JSON file.
 
         Returns:
             ICVLP
@@ -162,7 +162,7 @@ class ICVLP(ObjectWrapper):
         r""" Saves the object to a JSON file.
 
         Arguments:
-            filepath (str): Path to json file.
+            filepath (str): Path to JSON file.
             indent (int): Indentation level of the JSON file.
         """
         json.dump(self.to_dict(), open(filepath, 'w'), indent=indent)
