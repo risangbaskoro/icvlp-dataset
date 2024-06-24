@@ -11,6 +11,12 @@ class DataObject:
     def __init__(self, children: list[T]):
         self.children = [self.children_type.__init__(child) for child in children] if children else []
 
+    def from_dict(self, data: dict):
+        for k, v in data.items():
+            if hasattr(self, k):
+                setattr(self, k, v)
+        return self
+
     def as_dict(self) -> dict:
         r""" Returns the object as a dictionary
 
@@ -162,7 +168,7 @@ class Video(DataObject):
         return super().extend(other)
 
 
-class ICVLP:
+class ICVLP(DataObject):
     r""" Indonesian Commercial Vehicle License Plate dataset.
 
     Collection of Videos that has license plates in their frames.
@@ -171,17 +177,20 @@ class ICVLP:
 
     videos: list[children_type]
 
-    def __init__(self, data):
-        self.videos = [self.children_type(video) for video in data]
-        self.children = self.videos
+    def __init__(self, videos: list[Video]):
+        super().__init__(videos)
+        self.videos: list[Video] = self.children
 
     def append(self, item: children_type):
-        self.videos.append(item)
-        return self
+        if not isinstance(item, self.children_type):
+            raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        return super().append(item)
 
     def extend(self, other: list[children_type]):
-        self.videos.extend(other)
-        return self
+        for item in other:
+            if not isinstance(item, self.children_type):
+                raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        return super().extend(other)
 
     @classmethod
     def from_json(cls, json_filepath: str):
@@ -194,8 +203,20 @@ class ICVLP:
             ICVLP
         """
         with open(json_filepath, 'r') as f:
-            data = json.load(f)
+            data_list = json.load(f)
+            data = []
+            for video_dict in data_list:
+                plates = []
+                for plate_dict in video_dict['plates']:
+                    frames = []
+                    for frame_dict in plate_dict['frames']:
+                        frames.append(Frame(**frame_dict))
+                    plate_dict['frames'] = frames
+                    plates.append(Plate(*plate_dict))
+                video_dict['plates'] = plates
+                data.append(Video(video_dict))
+
         return cls(data)
 
     def to_json(self):
-        return json.dumps([video.__dict__ for video in self.videos], indent=2)
+        return json.dumps([video.as_dict() for video in self.videos], indent=2)
