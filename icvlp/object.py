@@ -187,13 +187,20 @@ class ICVLP(DataObject):
     def append(self, item: children_type):
         if not isinstance(item, self.children_type):
             raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        self._check_video_id_exists(item)
         return super().append(item)
 
     def extend(self, other: list[children_type]):
         for item in other:
             if not isinstance(item, self.children_type):
                 raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+            self._check_video_id_exists(item)
         return super().extend(other)
+
+    def _check_video_id_exists(self, video: Video):
+        video_ids = [video.video_id for video in self.videos]
+        if video.video_id in video_ids:
+            raise KeyError(f"Video ID {video.video_id} is already in {self} videos.")
 
     @classmethod
     def from_json(cls, json_filepath: str):

@@ -8,7 +8,7 @@ from icvlp import Frame, Plate, Video, ICVLP
 class BaseTestCase(TestCase):
     def setUp(self):
         self.video = Video(
-            video_id="0001",
+            video_id="9997",
             source="Example",
             url="https://example.id",
             plates=[]
