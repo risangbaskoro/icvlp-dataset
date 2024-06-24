@@ -1,6 +1,8 @@
+import json
+import os
 from unittest import TestCase
 
-from icvlp import Frame, Plate, Video
+from icvlp import Frame, Plate, Video, ICVLP
 
 
 class BaseTestCase(TestCase):
@@ -145,3 +147,41 @@ class TestVideo(BaseTestCase):
             self.video.extend(self.videos)
         with self.assertRaises(TypeError):
             self.video.extend(self.frames1)
+
+
+class TestICVLP(BaseTestCase):
+    def setUp(self):
+        super().setUp()
+        dirname = os.path.dirname(__file__)
+        dirname = os.path.dirname(dirname)
+        test_filename = os.path.join(dirname, 'test.json')
+
+        with open(test_filename, 'r') as f:
+            self.test_data = json.load(f)
+            f.close()
+
+        self.icvlp = ICVLP.from_json(test_filename)
+
+    def test_can_dump_json_string(self):
+        self.assertEqual(self.icvlp.to_json(), json.dumps(self.test_data, indent=2))
+
+    def test_can_append_video(self):
+        self.icvlp.append(self.video)
+        assert self.icvlp.children[-1] == self.icvlp.videos[-1] == self.video
+
+    def test_can_only_append_video(self):
+        with self.assertRaises(TypeError):
+            self.icvlp.append(self.plate)
+        with self.assertRaises(TypeError):
+            self.icvlp.append(self.frames1[0])
+
+    def test_can_extend_videos(self):
+        videos_len = len(self.videos)
+        self.icvlp.extend(self.videos)
+        assert self.icvlp.children[videos_len:] == self.icvlp.videos[videos_len:] == self.videos
+
+    def test_can_only_extend_videos(self):
+        with self.assertRaises(TypeError):
+            self.icvlp.extend(self.plates)
+        with self.assertRaises(TypeError):
+            self.icvlp.extend(self.frames1)
