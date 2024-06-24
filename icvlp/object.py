@@ -14,10 +14,8 @@ class DataObject:
                          else child
                          for child in children] if children else []
 
-    def from_dict(self, data: dict):
-        for k, v in data.items():
-            if hasattr(self, k):
-                setattr(self, k, v)
+    def from_dict(self, data):
+        self.__dict__.update(**data)
         return self
 
     def as_dict(self) -> dict:
