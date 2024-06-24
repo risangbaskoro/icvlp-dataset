@@ -106,12 +106,16 @@ class Plate(DataObject):
     def append(self, item: T):
         if not isinstance(item, self.children_type):
             raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        if self.frame_start > item.frame or item.frame > self.frame_end:
+            raise ValueError(f"Frame must between {self.frame_start} and {self.frame_end}. Got {item.as_dict()}.")
         return super().append(item)
 
     def extend(self, other: list[T]):
         for item in other:
             if not isinstance(item, self.children_type):
                 raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+            if self.frame_start > item.frame or item.frame > self.frame_end:
+                raise ValueError(f"Frame must between {self.frame_start} and {self.frame_end}. Got {item.as_dict()}.")
         return super().extend(other)
 
 

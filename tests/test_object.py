@@ -49,10 +49,21 @@ class BaseTestCase(TestCase):
             )
         ]
 
-        self.frames = [
+        self.frames1 = [
             Frame(
-                frame=1000,
+                frame=2,
                 bbox=[1, 1, 90, 90]
+            ),
+            Frame(
+                frame=4,
+                bbox=[1, 1, 90, 90]
+            ),
+        ]
+
+        self.frames2 = [
+            Frame(
+                frame=2000,
+                bbox=[1, 1, 200, 200]
             ),
             Frame(
                 frame=2001,
@@ -80,15 +91,15 @@ class TestFrame(TestCase):
 
 class TestPlate(BaseTestCase):
     def test_can_append_frame(self):
-        for frame in self.frames:
+        for frame in self.frames1:
             self.plate.append(frame)
-            assert self.plate.frames[0] == self.frames[0]
+            assert self.plate.frames[0] == self.frames1[0]
             assert self.plate.frames[-1] == frame
             assert isinstance(self.plate.frames[-1], Frame)
 
     def test_can_extend_frames(self):
-        self.plate.extend(self.frames)
-        assert self.plate.frames == self.frames
+        self.plate.extend(self.frames1)
+        assert self.plate.frames == self.frames1
         for frame in self.plate.frames:
             assert isinstance(frame, Frame)
 
@@ -103,6 +114,12 @@ class TestPlate(BaseTestCase):
             self.plate.extend(self.videos)
         with self.assertRaises(TypeError):
             self.plate.extend(self.plates)
+
+    def test_frame_out_of_bounds(self):
+        with self.assertRaises(ValueError):
+            self.plate.append(self.frames2[0])
+        with self.assertRaises(ValueError):
+            self.plate.extend(self.frames2)
 
 
 class TestVideo(BaseTestCase):
@@ -121,10 +138,10 @@ class TestVideo(BaseTestCase):
         with self.assertRaises(TypeError):
             self.video.append(self.videos[0])
         with self.assertRaises(TypeError):
-            self.video.append(self.frames[0])
+            self.video.append(self.frames1[0])
 
     def test_can_only_extend_plates(self):
         with self.assertRaises(TypeError):
             self.video.extend(self.videos)
         with self.assertRaises(TypeError):
-            self.video.extend(self.frames)
+            self.video.extend(self.frames1)
