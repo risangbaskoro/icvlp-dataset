@@ -227,5 +227,8 @@ class ICVLP(DataObject):
                 data.append(Video().from_dict(video_dict))
         return cls(data)
 
-    def to_json(self):
-        return json.dumps([video.as_dict() for video in self.videos], indent=2)
+    def to_json(self, indent: int = 2):
+        return json.dumps(
+            [video.as_dict() for video in self.videos],
+            indent=indent
+        )
