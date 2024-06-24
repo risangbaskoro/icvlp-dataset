@@ -207,18 +207,24 @@ class ICVLP(DataObject):
         """
         with open(json_filepath, 'r') as f:
             data_list = json.load(f)
-            data = []
-            for video_dict in data_list:
-                plates = []
-                for plate_dict in video_dict['plates']:
-                    frames = []
-                    for frame_dict in plate_dict['frames']:
-                        frames.append(Frame(**frame_dict))
-                    plate_dict['frames'] = frames
-                    plates.append(Plate(*plate_dict))
-                video_dict['plates'] = plates
-                data.append(Video(video_dict))
+            f.close()
 
+        data = []
+        if len(data_list) > 0:
+            for video_dict in data_list:
+                plates = video_dict['plates']
+                if len(plates) > 0:
+                    plates_list = []
+                    for plate_dict in plates:
+                        frames = plate_dict['frames']
+                        if len(frames) > 0:
+                            frames_list = []
+                            for frame in frames:
+                                frames_list.append(Frame().from_dict(frame))
+                            plate_dict['frames'] = frames_list
+                        plates_list.append(Plate().from_dict(plate_dict))
+                    video_dict['plates'] = plates_list
+                data.append(Video().from_dict(video_dict))
         return cls(data)
 
     def to_json(self):
