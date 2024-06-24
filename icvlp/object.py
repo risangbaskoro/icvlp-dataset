@@ -9,7 +9,10 @@ class DataObject:
     children: list[T]
 
     def __init__(self, children: list[T]):
-        self.children = [self.children_type.__init__(child) for child in children] if children else []
+        self.children = [self.children_type.__init__(child)
+                         if not isinstance(child, DataObject) and not isinstance(child, int)
+                         else child
+                         for child in children] if children else []
 
     def from_dict(self, data: dict):
         for k, v in data.items():
