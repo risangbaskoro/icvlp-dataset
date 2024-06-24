@@ -68,6 +68,8 @@ class Frame(DataObject):
 
     @staticmethod
     def __check_bbox(bbox: list[int]):
+        if bbox is None:
+            return
         if len(bbox) != 4:
             raise ValueError(f"bbox must be length 4. Got {len(bbox)}.")
         for i, x in enumerate(bbox):
