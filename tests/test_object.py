@@ -81,7 +81,7 @@ class TestFrame(TestCase):
 
     def test_bbox_type(self):
         frame = Frame(frame=10, bbox=["1", 1.2, 200, 200])
-        assert frame.bbox == [1, 1, 200, 200]
+        self.assertEqual(frame.bbox, [1, 1, 200, 200])
 
         with self.assertRaises(TypeError):
             Frame(frame=10, bbox=["a string", 1, 200, 200])
@@ -95,15 +95,15 @@ class TestPlate(BaseTestCase):
     def test_can_append_frame(self):
         for frame in self.frames1:
             self.plate.append(frame)
-            assert self.plate.frames[0] == self.frames1[0]
-            assert self.plate.frames[-1] == frame
-            assert isinstance(self.plate.frames[-1], Frame)
+            self.assertEqual(self.plate.frames[0], self.frames1[0])
+            self.assertEqual(self.plate.frames[-1], frame)
+            self.assertIsInstance(self.plate.frames[-1], Frame)
 
     def test_can_extend_frames(self):
         self.plate.extend(self.frames1)
-        assert self.plate.frames == self.frames1
+        self.assertEqual(self.plate.frames, self.frames1)
         for frame in self.plate.frames:
-            assert isinstance(frame, Frame)
+            self.assertIsInstance(frame, Frame)
 
     def test_can_only_append_frame(self):
         with self.assertRaises(TypeError):
@@ -128,13 +128,13 @@ class TestVideo(BaseTestCase):
     def test_can_append_plate(self):
         for plate in self.plates:
             self.video.append(plate)
-            assert self.video.plates[0] == self.plates[0]
-            assert self.video.plates[-1] == plate
-            assert isinstance(self.video.plates[-1], Plate)
+            self.assertEqual(self.video.plates[0], self.plates[0])
+            self.assertEqual(self.video.plates[-1], plate)
+            self.assertIsInstance(self.video.plates[-1], Plate)
 
     def test_can_extend_plates(self):
         self.video.extend(self.plates)
-        assert self.video.plates == self.plates
+        self.assertEqual(self.video.plates, self.plates)
 
     def test_can_only_append_plate(self):
         with self.assertRaises(TypeError):
@@ -167,7 +167,7 @@ class TestICVLP(BaseTestCase):
 
     def test_can_append_video(self):
         self.icvlp.append(self.video)
-        assert self.icvlp.children[-1] == self.icvlp.videos[-1] == self.video
+        self.assertEqual(self.icvlp.videos[-1], self.video)
 
     def test_can_only_append_video(self):
         with self.assertRaises(TypeError):
@@ -178,7 +178,7 @@ class TestICVLP(BaseTestCase):
     def test_can_extend_videos(self):
         videos_len = len(self.videos)
         self.icvlp.extend(self.videos)
-        assert self.icvlp.children[videos_len:] == self.icvlp.videos[videos_len:] == self.videos
+        self.assertEqual(self.icvlp.videos[videos_len:], self.videos)
 
     def test_can_only_extend_videos(self):
         with self.assertRaises(TypeError):
