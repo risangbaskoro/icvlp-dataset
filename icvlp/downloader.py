@@ -98,12 +98,18 @@ class VideoDownloader:
         filename = video_id + ".mp4"
         download_path = os.path.join(self.directory, filename)
 
-        if f"{download_path}" in open(self.downloaded_videos_log, 'r').read():
-            logging.info(
-                f"Video {download_path} already logged to '{self.downloaded_videos_log}'. "
-                f"Remove the line in the file to download again."
-            )
-            return
+        if not os.path.exists(self.downloaded_videos_log):
+            with open(self.downloaded_videos_log, 'w') as logfile:
+                logfile.write("")
+                logfile.close()
+
+        with open(self.downloaded_videos_log, 'r') as logfile:
+            if f"{download_path}" in logfile.read():
+                logging.info(
+                    f"Video {download_path} already logged to '{self.downloaded_videos_log}'. "
+                    f"Remove the line in the file to download again."
+                )
+                return
 
         if os.path.exists(download_path):
             logging.info(f'YouTube video {download_path} is already exists.')
