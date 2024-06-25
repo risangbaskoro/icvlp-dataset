@@ -1,0 +1,52 @@
+[
+  {
+    "video_id": "0001",
+    "source": "MrZygy3",
+    "url": "https://www.youtube.com/watch?v=jsxYPqyK4Bs",
+    "fps": 6,
+    "plates": [
+      {
+        "label": "AB8381FU",
+        "vehicle_type": "mobil box",
+        "frame_start": 750,
+        "frame_end": 810,
+        "frames": [
+          {
+            "frame": 750,
+            "bbox": [
+              462,
+              992,
+              658,
+              1062
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "video_id": "0002",
+    "source": "Something",
+    "url": "https://www.example.com/",
+    "fps": 6,
+    "plates": [
+      {
+        "label": "EX4MPLE",
+        "vehicle_type": "mobil something",
+        "frame_start": 123,
+        "frame_end": 321,
+        "frames": [
+          {
+            "frame": 222,
+            "bbox": [
+              1,
+              1,
+              200,
+              200
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

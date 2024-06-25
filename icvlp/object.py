@@ -1,99 +1,134 @@
 import json
-from typing import List, TypeVar, Dict
+from typing import TypeVar
 
-T = TypeVar("T", bound="DataObject")
+T = TypeVar('T', bound="DataObject")
 
 
-class ObjectWrapper:
-    r""" Base class for all data objects
-    """
+class DataObject:
+    children_type: T
+    children: list[T]
 
-    def __init__(self, **kwargs):
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+    def __init__(self, children: list[T]):
+        self.children = [self.children_type.__init__(child)
+                         if not isinstance(child, DataObject) and not isinstance(child, int)
+                         else child
+                         for child in children] if children else []
 
-    def to_dict(self) -> Dict[str, T]:
-        r""" Converts the object to a dictionary.
+    def from_dict(self, data):
+        self.__dict__.update(**data)
+        return self
+
+    def as_dict(self) -> dict:
+        r""" Returns the object as a dictionary
 
         Returns:
-            Dict[str, T]
+            dict: The object as a dictionary
         """
-        result = {}
+        ret = {}
         for key, value in self.__dict__.items():
+            if key == "children":
+                continue
             if isinstance(value, list):
-                result[key] = [v.to_dict() if isinstance(v, ObjectWrapper) else v for v in value]
+                ret[key] = [v.as_dict() if isinstance(v, DataObject) else v for v in value]
             else:
-                result[key] = value.to_dict() if isinstance(value, ObjectWrapper) else value
-        return result
+                ret[key] = value
+        return ret
 
-    def to_json(self) -> str:
-        r""" Serializes data to JSON formatted string.
+    def append(self, item: T):
+        if self.children_type is not None and not isinstance(type(item), type(self.children_type)):
+            raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        self.children.append(item)
+        return self
 
-        Returns:
-            str
-        """
-        return json.dumps(self.to_dict(), indent=2)
-
-    def __repr__(self):
-        class_name = self.__class__.__name__
-        attributes = ', '.join(f"{key}={getattr(self, key)}" for key in self.__dict__)
-        return f"{class_name}({attributes})"
-
-    def __getattr__(self, item):
-        try:
-            return self.__dict__[item]
-        except KeyError:
-            raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{item}'")
-
-    def __setattr__(self, key, value):
-        self.__dict__[key] = value
-
-    def __delattr__(self, item):
-        try:
-            del self.__dict__[item]
-        except KeyError:
-            raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{item}'")
+    def extend(self, other: list[T]):
+        for item in other:
+            if self.children_type is not None and not isinstance(type(item), type(self.children_type)):
+                raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        self.children.extend(other)
+        return self
 
 
-class Frame(ObjectWrapper):
+class Frame(DataObject):
     r""" Data object of a video frame with bounding box.
 
     Arguments:
-        frame (str): Frame number of the video.
+        frame (int): Frame number of the video.
         bbox (list): Bounding box of the frame. Configured in [``x_min``, ``y_min``, ``x_max``, ``y_max``].
     """
+    children_type = None
 
-    def __init__(self, frame: str, bbox: List[int]):
-        super().__init__(frame=frame, bbox=bbox)
+    frame: int
+    bbox: list[int]
+
+    def __init__(self, frame: int = None, bbox: list[int] = None):
+        super().__init__([])
+        self.frame: int = frame
+        self.__check_bbox(bbox)
+        self.bbox: list[int] = bbox
+
+    @staticmethod
+    def __check_bbox(bbox: list[int]):
+        if bbox is None:
+            return
+        if len(bbox) != 4:
+            raise ValueError(f"bbox must be length 4. Got {len(bbox)}.")
+        for i, x in enumerate(bbox):
+            try:
+                bbox[i] = int(x)
+            except Exception:
+                raise TypeError(f"Item in bbox must be of type {int}. Got {type(x)}.")
+        if bbox[0] >= bbox[2] or bbox[1] >= bbox[3]:
+            raise ValueError(f"bbox must be in shape (`x_min`, `y_min`, `x_max`, `y_max`). Got{bbox}.")
 
 
-class Plate(ObjectWrapper):
+class Plate(DataObject):
     r""" Data object of a plate with labels and frames.
 
     Arguments:
         label (str): Label of the plate.
+        vehicle_type (str): Type of the vehicle.
         frame_start (int): First occurred frame of the plate.
         frame_end (int): Second occurred frame of the plate.
         frames (List[Frame]): List of frames of the plate.
     """
+    children_type = Frame
 
-    def __init__(self, label: str, frame_start: int, frame_end: int, frames: List[T]):
-        super().__init__(label=label, frame_start=frame_start, frame_end=frame_end,
-                         frames=[Frame(**frame) for frame in frames])
+    label: str
+    vehicle_type: str
+    frame_start: int
+    frame_end: int
+    frames: list[children_type]
 
-    def add_frames(self, frames: List[Frame]) -> None:
-        r""" Adds frames to the plate.
+    def __init__(self,
+                 label: str = None,
+                 vehicle_type: str = None,
+                 frame_start: int = None,
+                 frame_end: int = None,
+                 frames: list[Frame] = None):
+        super().__init__(frames)
+        self.label: str = label
+        self.vehicle_type: str = vehicle_type
+        self.frame_start: int = frame_start
+        self.frame_end: int = frame_end
+        self.frames = self.children
 
-        Arguments:
-            frames (List[Frame]): List of frames of the plate.
-        """
-        for frame in frames:
-            assert self.frame_start <= frame.frame <= self.frame_end, \
-                f"Frame should be between {self.frame_start} and {self.frame_end}. Got {frame.frame}"
-        self.frames.extend(frames)
+    def append(self, item: T):
+        if not isinstance(item, self.children_type):
+            raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        if self.frame_start > item.frame or item.frame > self.frame_end:
+            raise ValueError(f"Frame must between {self.frame_start} and {self.frame_end}. Got {item.as_dict()}.")
+        return super().append(item)
+
+    def extend(self, other: list[T]):
+        for item in other:
+            if not isinstance(item, self.children_type):
+                raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+            if self.frame_start > item.frame or item.frame > self.frame_end:
+                raise ValueError(f"Frame must between {self.frame_start} and {self.frame_end}. Got {item.as_dict()}.")
+        return super().extend(other)
 
 
-class Video(ObjectWrapper):
+class Video(DataObject):
     r""" Data object of a video with its URL, source, and plates.
 
     Arguments:
@@ -103,38 +138,69 @@ class Video(ObjectWrapper):
         fps (int): Frame to get per second when extracting frames from video.
         plates (List[Plate]): List of plates of the video.
     """
+    children_type = Plate
 
-    def __init__(self, video_id: str, source: str, url: str, fps: int, plates: List[T]):
-        super().__init__(video_id=video_id, source=source, url=url, fps=fps,
-                         plates=[Plate(**plate) for plate in plates])
+    video_id: str
+    source: str
+    url: str
+    fps: int
+    plates: list[children_type]
 
-    def add_plates(self, plates: List[Plate]) -> None:
-        r""" Adds plates to the video.
-        Arguments:
-            plates (List[Plate]): List of plates of the video.
-        """
-        self.plates.extend(plates)
+    def __init__(self,
+                 video_id: str = None,
+                 source: str = None,
+                 url: str = None,
+                 fps: int = None,
+                 plates: list[Plate] = None):
+        super().__init__(plates or [])
+        self.video_id = video_id
+        self.source: str = source
+        self.url: str = url
+        self.fps: int = fps
+        self.plates: list[Plate] = self.children
 
-    def get_frames(self) -> List[Frame]:
-        r""" Gets frames of the video.
-        """
-        all_frames = []
-        for plate in self.plates:
-            all_frames.extend(plate.frames)
-        return all_frames
+    def append(self, item: T):
+        if not isinstance(item, self.children_type):
+            raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        return super().append(item)
+
+    def extend(self, other: list[T]):
+        for item in other:
+            if not isinstance(item, self.children_type):
+                raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        return super().extend(other)
 
 
-class ICVLP(ObjectWrapper):
+class ICVLP(DataObject):
     r""" Indonesian Commercial Vehicle License Plate dataset.
 
-    This object holds data of Videos, Plates, and Frames.
-
-    Arguments:
-        videos (List[Video]): List of videos.
+    Collection of Videos that has license plates in their frames.
     """
+    children_type = Video
 
-    def __init__(self, videos: List[T]):
-        super().__init__(videos=[Video(**video_data) for video_data in videos])
+    videos: list[children_type]
+
+    def __init__(self, videos: list[Video]):
+        super().__init__(videos)
+        self.videos: list[Video] = self.children
+
+    def append(self, item: children_type):
+        if not isinstance(item, self.children_type):
+            raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        self._check_video_id_exists(item)
+        return super().append(item)
+
+    def extend(self, other: list[children_type]):
+        for item in other:
+            if not isinstance(item, self.children_type):
+                raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+            self._check_video_id_exists(item)
+        return super().extend(other)
+
+    def _check_video_id_exists(self, video: Video):
+        video_ids = [video.video_id for video in self.videos]
+        if video.video_id in video_ids:
+            raise KeyError(f"Video ID {video.video_id} is already in {self} videos.")
 
     @classmethod
     def from_json(cls, json_filepath: str):
@@ -147,30 +213,29 @@ class ICVLP(ObjectWrapper):
             ICVLP
         """
         with open(json_filepath, 'r') as f:
-            data = json.load(f)
+            data_list = json.load(f)
+            f.close()
+
+        data = []
+        if len(data_list) > 0:
+            for video_dict in data_list:
+                plates = video_dict['plates']
+                if len(plates) > 0:
+                    plates_list = []
+                    for plate_dict in plates:
+                        frames = plate_dict['frames']
+                        if len(frames) > 0:
+                            frames_list = []
+                            for frame in frames:
+                                frames_list.append(Frame().from_dict(frame))
+                            plate_dict['frames'] = frames_list
+                        plates_list.append(Plate().from_dict(plate_dict))
+                    video_dict['plates'] = plates_list
+                data.append(Video().from_dict(video_dict))
         return cls(data)
 
-    def to_dict(self) -> List[T]:
-        r""" Converts the object to a dictionary.
-
-        Returns:
-            List[Dict[str, T]]
-        """
-        return [video.to_dict() for video in self.videos]
-
-    def to_json(self) -> str:
-        r""" Serializes data to JSON formatted string.
-
-        Returns:
-            str
-        """
-        return json.dumps(self.to_dict(), indent=2)
-
-    def save(self, filepath: str, indent: int = 2) -> None:
-        r""" Saves the object to a JSON file.
-
-        Arguments:
-            filepath (str): Path to JSON file.
-            indent (int): Indentation level of the JSON file.
-        """
-        json.dump(self.to_dict(), open(filepath, 'w'), indent=indent)
+    def to_json(self, indent: int = 2):
+        return json.dumps(
+            [video.as_dict() for video in self.videos],
+            indent=indent
+        )
