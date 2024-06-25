@@ -7,6 +7,11 @@
 # Python Caches
 **/__pycache__/
 
+# Build Packages
+/build
+/dist
+/*.egg-info
+
 # Videos
 /videos/
 downloaded_videos.txt
