@@ -117,6 +117,7 @@ class Plate(DataObject):
             raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
         if self.frame_start > item.frame or item.frame > self.frame_end:
             raise ValueError(f"Frame must between {self.frame_start} and {self.frame_end}. Got {item.as_dict()}.")
+        self.frames.append(item)
         return super().append(item)
 
     def extend(self, other: list[T]):
@@ -125,7 +126,14 @@ class Plate(DataObject):
                 raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
             if self.frame_start > item.frame or item.frame > self.frame_end:
                 raise ValueError(f"Frame must between {self.frame_start} and {self.frame_end}. Got {item.as_dict()}.")
+        self.frames.extend(other)
         return super().extend(other)
+
+    def check_frame_number_exists_in_children(self, frame_number: int):
+        for frame in self.frames:
+            if frame.frame == frame_number:
+                return True
+        return False
 
 
 class Video(DataObject):
@@ -162,12 +170,14 @@ class Video(DataObject):
     def append(self, item: T):
         if not isinstance(item, self.children_type):
             raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        self.plates.append(item)
         return super().append(item)
 
     def extend(self, other: list[T]):
         for item in other:
             if not isinstance(item, self.children_type):
                 raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
+        self.plates.extend(other)
         return super().extend(other)
 
 
@@ -188,6 +198,7 @@ class ICVLP(DataObject):
         if not isinstance(item, self.children_type):
             raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
         self._check_video_id_exists(item)
+        self.videos.append(item)
         return super().append(item)
 
     def extend(self, other: list[children_type]):
@@ -195,6 +206,7 @@ class ICVLP(DataObject):
             if not isinstance(item, self.children_type):
                 raise TypeError(f"Item must be of type {self.children_type}. Got {type(item)}.")
             self._check_video_id_exists(item)
+        self.videos.extend(other)
         return super().extend(other)
 
     def _check_video_id_exists(self, video: Video):
