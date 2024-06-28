@@ -7,6 +7,7 @@
     "plates": [
       {
         "label": "AB8381FU",
+        "vehicle_type": "single_axle",
         "frame_start": 750,
         "frame_end": 810,
         "frames": [
@@ -131,6 +132,7 @@
       },
       {
         "label": "AB8812VK",
+        "vehicle_type": "single_axle",
         "frame_start": 960,
         "frame_end": 1020,
         "frames": [
@@ -255,6 +257,7 @@
       },
       {
         "label": "AB8360DT",
+        "vehicle_type": "single_axle",
         "frame_start": 1350,
         "frame_end": 1376,
         "frames": [
@@ -316,6 +319,7 @@
       },
       {
         "label": "AB8667EU",
+        "vehicle_type": "single_axle",
         "frame_start": 1920,
         "frame_end": 1967,
         "frames": [
@@ -413,6 +417,7 @@
       },
       {
         "label": "AB8437BY",
+        "vehicle_type": "single_axle",
         "frame_start": 2640,
         "frame_end": 2730,
         "frames": [
@@ -591,6 +596,7 @@
       },
       {
         "label": "G1618JA",
+        "vehicle_type": "single_axle",
         "frame_start": 2823,
         "frame_end": 2898,
         "frames": [
@@ -742,6 +748,7 @@
       },
       {
         "label": "AB9260HN",
+        "vehicle_type": "single_axle",
         "frame_start": 3015,
         "frame_end": 3075,
         "frames": [
@@ -866,6 +873,7 @@
       },
       {
         "label": "AB8921ZN",
+        "vehicle_type": "single_axle",
         "frame_start": 3480,
         "frame_end": 3540,
         "frames": [
@@ -990,6 +998,7 @@
       },
       {
         "label": "AB8715AY",
+        "vehicle_type": "single_axle",
         "frame_start": 3810,
         "frame_end": 3870,
         "frames": [
@@ -1114,6 +1123,7 @@
       },
       {
         "label": "AD1486ZJ",
+        "vehicle_type": "single_axle",
         "frame_start": 4020,
         "frame_end": 4080,
         "frames": [
@@ -1238,6 +1248,7 @@
       },
       {
         "label": "BE9294BA",
+        "vehicle_type": "single_axle",
         "frame_start": 4135,
         "frame_end": 4175,
         "frames": [
@@ -1326,6 +1337,7 @@
       },
       {
         "label": "AD1322KJ",
+        "vehicle_type": "single_axle",
         "frame_start": 6050,
         "frame_end": 6075,
         "frames": [
@@ -1387,12 +1399,14 @@
       },
       {
         "label": "AD1306XJ",
+        "vehicle_type": "single_axle",
         "frame_start": 6485,
         "frame_end": 6530,
         "frames": []
       },
       {
         "label": "AD1623ZJ",
+        "vehicle_type": "single_axle",
         "frame_start": 6760,
         "frame_end": 6785,
         "frames": [
@@ -1454,6 +1468,7 @@
       },
       {
         "label": "AD1640LB",
+        "vehicle_type": "single_axle",
         "frame_start": 6850,
         "frame_end": 6890,
         "frames": [
@@ -1542,6 +1557,7 @@
       },
       {
         "label": "AD1322KJ",
+        "vehicle_type": "single_axle",
         "frame_start": 7255,
         "frame_end": 7290,
         "frames": [
@@ -1621,6 +1637,7 @@
       },
       {
         "label": "AD1377HJ",
+        "vehicle_type": "single_axle",
         "frame_start": 7370,
         "frame_end": 7430,
         "frames": [
@@ -1745,6 +1762,7 @@
       },
       {
         "label": "AD1306XJ",
+        "vehicle_type": "single_axle",
         "frame_start": 7885,
         "frame_end": 7915,
         "frames": [
@@ -1815,6 +1833,7 @@
       },
       {
         "label": "AD1623ZJ",
+        "vehicle_type": "single_axle",
         "frame_start": 8115,
         "frame_end": 8130,
         "frames": [
@@ -1858,6 +1877,7 @@
       },
       {
         "label": "AA1832EB",
+        "vehicle_type": "single_axle",
         "frame_start": 8368,
         "frame_end": 8390,
         "frames": [
@@ -1910,6 +1930,7 @@
       },
       {
         "label": "AB8510EU",
+        "vehicle_type": "single_axle",
         "frame_start": 8765,
         "frame_end": 8790,
         "frames": [
@@ -1971,6 +1992,7 @@
       },
       {
         "label": "AD1641PJ",
+        "vehicle_type": "single_axle",
         "frame_start": 8797,
         "frame_end": 8817,
         "frames": [
@@ -2023,6 +2045,7 @@
       },
       {
         "label": "AB8557FU",
+        "vehicle_type": "single_axle",
         "frame_start": 9680,
         "frame_end": 9715,
         "frames": [
@@ -2102,85 +2125,87 @@
       },
       {
         "label": "AB8489FU",
+        "vehicle_type": "single_axle",
         "frame_start": 10130,
         "frame_end": 10165,
         "frames": [
           {
             "frame": 10130,
             "bbox": [
-              1479,
-              842,
-              1599,
-              902
+              1482,
+              848,
+              1584,
+              894
             ]
           },
           {
             "frame": 10135,
             "bbox": [
-              1486,
-              846,
-              1616,
-              916
+              1493,
+              850,
+              1602,
+              906
             ]
           },
           {
             "frame": 10140,
             "bbox": [
               1493,
-              862,
-              1627,
-              928
+              871,
+              1611,
+              917
             ]
           },
           {
             "frame": 10145,
             "bbox": [
-              1488,
-              874,
-              1635,
-              947
+              1493,
+              882,
+              1620,
+              936
             ]
           },
           {
             "frame": 10150,
             "bbox": [
-              1465,
-              895,
-              1643,
-              974
+              1483,
+              907,
+              1622,
+              965
             ]
           },
           {
             "frame": 10155,
             "bbox": [
-              1442,
-              923,
-              1620,
-              1002
+              1447,
+              928,
+              1606,
+              991
             ]
           },
           {
             "frame": 10160,
             "bbox": [
-              1392,
-              937,
-              1590,
-              1027
+              1401,
+              951,
+              1577,
+              1016
             ]
           },
           {
             "frame": 10165,
             "bbox": [
-              1360,
-              964,
-              1558,
-              1054
+              1361,
+              976,
+              1544,
+              1044
             ]
           }
         ]
       },
       {
         "label": "AB8689OE",
+        "vehicle_type": "single_axle",
         "frame_start": 10445,
         "frame_end": 10470,
         "frames": [
@@ -2242,6 +2267,7 @@
       },
       {
         "label": "H1912GY",
+        "vehicle_type": "single_axle",
         "frame_start": 10685,
         "frame_end": 10715,
         "frames": [
@@ -2312,6 +2338,7 @@
       },
       {
         "label": "B9856PDD",
+        "vehicle_type": "single_axle",
         "frame_start": 11000,
         "frame_end": 11070,
         "frames": [
@@ -2331,6 +2358,15 @@
               660,
               272,
               707
+            ]
+          },
+          {
+            "frame": 11010,
+            "bbox": [
+              338,
+              665,
+              447,
+              710
             ]
           },
           {
@@ -2436,12 +2472,51 @@
       },
       {
         "label": "AB9285FN",
+        "vehicle_type": "single_axle",
         "frame_start": 11745,
         "frame_end": 11790,
-        "frames": []
+        "frames": [
+          {
+            "frame": 11775,
+            "bbox": [
+              1183,
+              901,
+              1338,
+              943
+            ]
+          },
+          {
+            "frame": 11780,
+            "bbox": [
+              1158,
+              929,
+              1304,
+              977
+            ]
+          },
+          {
+            "frame": 11785,
+            "bbox": [
+              1117,
+              954,
+              1330,
+              1018
+            ]
+          },
+          {
+            "frame": 11790,
+            "bbox": [
+              1076,
+              995,
+              1283,
+              1069
+            ]
+          }
+        ]
       },
       {
         "label": "AB8651OE",
+        "vehicle_type": "single_axle",
         "frame_start": 12365,
         "frame_end": 12415,
         "frames": [
@@ -2548,6 +2623,7 @@
       },
       {
         "label": "AB9285FN",
+        "vehicle_type": "single_axle",
         "frame_start": 12590,
         "frame_end": 12665,
         "frames": [
@@ -2699,6 +2775,7 @@
       },
       {
         "label": "AB8250ZY",
+        "vehicle_type": "single_axle",
         "frame_start": 15825,
         "frame_end": 15905,
         "frames": [
@@ -2859,6 +2936,7 @@
       },
       {
         "label": "AB8841HN",
+        "vehicle_type": "pickup_truck",
         "frame_start": 16555,
         "frame_end": 16650,
         "frames": [
@@ -3046,6 +3124,7 @@
       },
       {
         "label": "G1618JA",
+        "vehicle_type": "single_axle",
         "frame_start": 17025,
         "frame_end": 17045,
         "frames": [
@@ -3098,9 +3177,19 @@
       },
       {
         "label": "AB9620HN",
+        "vehicle_type": "single_axle",
         "frame_start": 17050,
         "frame_end": 17110,
         "frames": [
+          {
+            "frame": 17050,
+            "bbox": [
+              1150,
+              973,
+              1475,
+              1080
+            ]
+          },
           {
             "frame": 17055,
             "bbox": [
@@ -3213,6 +3302,7 @@
       },
       {
         "label": "AB8629OE",
+        "vehicle_type": "single_axle",
         "frame_start": 20870,
         "frame_end": 20920,
         "frames": [
@@ -3319,6 +3409,7 @@
       },
       {
         "label": "AB8775OE",
+        "vehicle_type": "single_axle",
         "frame_start": 21020,
         "frame_end": 21100,
         "frames": [
@@ -3479,6 +3570,7 @@
       },
       {
         "label": "AB8921ZN",
+        "vehicle_type": "single_axle",
         "frame_start": 21120,
         "frame_end": 21145,
         "frames": [
@@ -3531,6 +3623,7 @@
       },
       {
         "label": "AB9402GD",
+        "vehicle_type": "single_axle",
         "frame_start": 21865,
         "frame_end": 21900,
         "frames": [
@@ -3610,6 +3703,7 @@
       },
       {
         "label": "AB8167JH",
+        "vehicle_type": "single_axle",
         "frame_start": 22490,
         "frame_end": 22530,
         "frames": [
@@ -3698,6 +3792,7 @@
       },
       {
         "label": "AB8421FU",
+        "vehicle_type": "single_axle",
         "frame_start": 22760,
         "frame_end": 22810,
         "frames": [
@@ -3804,6 +3899,7 @@
       },
       {
         "label": "AB8520QF",
+        "vehicle_type": "single_axle",
         "frame_start": 23895,
         "frame_end": 23920,
         "frames": [
@@ -3865,6 +3961,7 @@
       },
       {
         "label": "AB8905UK",
+        "vehicle_type": "single_axle",
         "frame_start": 24842,
         "frame_end": 24880,
         "frames": [
@@ -3944,6 +4041,7 @@
       },
       {
         "label": "AD1640LB",
+        "vehicle_type": "single_axle",
         "frame_start": 25158,
         "frame_end": 25198,
         "frames": [
@@ -4032,280 +4130,284 @@
       },
       {
         "label": "AB8266YK",
+        "vehicle_type": "single_axle",
         "frame_start": 26710,
         "frame_end": 26770,
         "frames": [
           {
             "frame": 26710,
             "bbox": [
-              1551,
-              827,
-              1723,
-              893
+              1546,
+              823,
+              1739,
+              888
             ]
           },
           {
             "frame": 26715,
             "bbox": [
-              1600,
-              843,
-              1783,
-              920
+              1595,
+              853,
+              1797,
+              915
             ]
           },
           {
             "frame": 26720,
             "bbox": [
-              1585,
-              840,
-              1768,
-              917
+              1578,
+              850,
+              1782,
+              913
             ]
           },
           {
             "frame": 26725,
             "bbox": [
-              1563,
-              838,
-              1744,
-              909
+              1554,
+              849,
+              1757,
+              908
             ]
           },
           {
             "frame": 26730,
             "bbox": [
-              1547,
-              837,
-              1728,
-              908
+              1538,
+              847,
+              1746,
+              902
             ]
           },
           {
             "frame": 26735,
             "bbox": [
-              1533,
-              838,
-              1714,
-              909
+              1524,
+              842,
+              1732,
+              900
             ]
           },
           {
             "frame": 26740,
             "bbox": [
-              1521,
-              834,
-              1702,
-              905
+              1501,
+              831,
+              1721,
+              896
             ]
           },
           {
             "frame": 26745,
             "bbox": [
-              1512,
-              834,
-              1693,
-              905
+              1505,
+              845,
+              1700,
+              900
             ]
           },
           {
             "frame": 26750,
             "bbox": [
-              1509,
-              837,
-              1690,
-              908
+              1502,
+              847,
+              1704,
+              905
             ]
           },
           {
             "frame": 26755,
             "bbox": [
-              1509,
-              841,
-              1690,
-              912
+              1501,
+              850,
+              1707,
+              911
             ]
           },
           {
             "frame": 26760,
             "bbox": [
-              1509,
-              849,
-              1690,
-              920
+              1500,
+              854,
+              1706,
+              914
             ]
           },
           {
             "frame": 26765,
             "bbox": [
-              1511,
-              853,
-              1692,
-              924
+              1506,
+              862,
+              1695,
+              918
             ]
           },
           {
             "frame": 26770,
             "bbox": [
-              1517,
-              859,
-              1699,
-              932
+              1507,
+              872,
+              1715,
+              929
             ]
           }
         ]
       },
       {
         "label": "AB8161DT",
-        "frame_start": 26525,
+        "vehicle_type": "pickup_truck",
+        "frame_start": 26530,
         "frame_end": 26570,
         "frames": [
           {
             "frame": 26530,
             "bbox": [
-              1580,
+              1585,
               753,
-              1720,
-              802
+              1723,
+              808
             ]
           },
           {
             "frame": 26535,
             "bbox": [
-              1587,
+              1588,
               751,
-              1732,
-              799
+              1731,
+              802
             ]
           },
           {
             "frame": 26540,
             "bbox": [
-              1590,
+              1588,
               751,
-              1735,
-              799
+              1736,
+              803
             ]
           },
           {
             "frame": 26545,
             "bbox": [
-              1592,
-              755,
-              1737,
-              803
+              1591,
+              752,
+              1740,
+              809
             ]
           },
           {
             "frame": 26550,
             "bbox": [
-              1592,
-              758,
-              1744,
-              812
+              1594,
+              762,
+              1746,
+              815
             ]
           },
           {
             "frame": 26555,
             "bbox": [
-              1603,
-              765,
-              1755,
-              819
+              1602,
+              768,
+              1751,
+              820
             ]
           },
           {
             "frame": 26560,
             "bbox": [
-              1618,
-              775,
-              1770,
-              829
+              1619,
+              772,
+              1774,
+              835
             ]
           },
           {
             "frame": 26565,
             "bbox": [
-              1645,
-              784,
-              1805,
-              846
+              1647,
+              791,
+              1807,
+              848
             ]
           },
           {
             "frame": 26570,
             "bbox": [
-              1673,
-              787,
-              1838,
-              853
+              1676,
+              792,
+              1837,
+              850
             ]
           }
         ]
       },
       {
         "label": "BE9294BA",
+        "vehicle_type": "single_axle",
         "frame_start": 26930,
         "frame_end": 26945,
         "frames": [
           {
             "frame": 26930,
             "bbox": [
-              187,
-              900,
-              321,
-              963
+              191,
+              899,
+              312,
+              954
             ]
           },
           {
             "frame": 26935,
             "bbox": [
-              251,
-              899,
-              385,
-              962
+              246,
+              897,
+              384,
+              956
             ]
           },
           {
             "frame": 26940,
             "bbox": [
-              316,
-              899,
-              450,
-              962
+              310,
+              895,
+              440,
+              955
             ]
           },
           {
             "frame": 26945,
             "bbox": [
-              373,
+              378,
               902,
-              507,
-              965
+              509,
+              962
             ]
           }
         ]
       },
       {
         "label": "R1431RK",
+        "vehicle_type": "single_axle",
         "frame_start": 31880,
         "frame_end": 31900,
         "frames": [
           {
             "frame": 31885,
             "bbox": [
-              1010,
-              1004,
-              1258,
-              1066
+              1003,
+              1006,
+              1261,
+              1065
             ]
           },
           {
             "frame": 31890,
             "bbox": [
-              995,
-              1010,
-              1246,
-              1074
+              996,
+              1015,
+              1244,
+              1070
             ]
           },
           {
@@ -4330,6 +4432,7 @@
       },
       {
         "label": "AB8184SK",
+        "vehicle_type": "single_axle",
         "frame_start": 32305,
         "frame_end": 32370,
         "frames": [
@@ -4463,6 +4566,7 @@
       },
       {
         "label": "AD1806JQ",
+        "vehicle_type": "single_axle",
         "frame_start": 32920,
         "frame_end": 32945,
         "frames": [
@@ -4524,6 +4628,7 @@
       },
       {
         "label": "AB8443CT",
+        "vehicle_type": "single_axle",
         "frame_start": 33940,
         "frame_end": 33985,
         "frames": [
@@ -4621,9 +4726,19 @@
       },
       {
         "label": "AB9196NB",
+        "vehicle_type": "single_axle",
         "frame_start": 35790,
         "frame_end": 35830,
         "frames": [
+          {
+            "frame": 35790,
+            "bbox": [
+              1005,
+              755,
+              1143,
+              813
+            ]
+          },
           {
             "frame": 35795,
             "bbox": [
@@ -4700,6 +4815,7 @@
       },
       {
         "label": "AD1632LU",
+        "vehicle_type": "single_axle",
         "frame_start": 38531,
         "frame_end": 38555,
         "frames": [
@@ -4752,6 +4868,7 @@
       },
       {
         "label": "AB8527AU",
+        "vehicle_type": "single_axle",
         "frame_start": 40160,
         "frame_end": 40195,
         "frames": [
@@ -4831,9 +4948,46 @@
       },
       {
         "label": "AD1450ZJ",
+        "vehicle_type": "single_axle",
         "frame_start": 42050,
         "frame_end": 42090,
         "frames": [
+          {
+            "frame": 42050,
+            "bbox": [
+              1000,
+              864,
+              1124,
+              912
+            ]
+          },
+          {
+            "frame": 42055,
+            "bbox": [
+              982,
+              859,
+              1109,
+              909
+            ]
+          },
+          {
+            "frame": 42060,
+            "bbox": [
+              966,
+              852,
+              1120,
+              908
+            ]
+          },
+          {
+            "frame": 42075,
+            "bbox": [
+              947,
+              838,
+              1084,
+              888
+            ]
+          },
           {
             "frame": 42080,
             "bbox": [
@@ -4865,195 +5019,349 @@
       },
       {
         "label": "AD1337HJ",
+        "vehicle_type": "single_axle",
         "frame_start": 42500,
         "frame_end": 42540,
         "frames": []
       },
       {
         "label": "AD8689OE",
+        "vehicle_type": "single_axle",
         "frame_start": 42810,
         "frame_end": 42845,
         "frames": []
       },
       {
         "label": "AD1641PJ",
+        "vehicle_type": "single_axle",
         "frame_start": 42900,
         "frame_end": 42935,
         "frames": [
           {
-            "frame": 8797,
+            "frame": 42905,
             "bbox": [
-              49,
-              949,
-              353,
-              1044
+              485,
+              817,
+              666,
+              872
             ]
           },
           {
-            "frame": 8802,
+            "frame": 42910,
             "bbox": [
-              215,
-              956,
-              517,
-              1050
+              541,
+              833,
+              733,
+              887
             ]
           },
           {
-            "frame": 8807,
+            "frame": 42915,
             "bbox": [
-              369,
-              961,
-              671,
-              1055
+              617,
+              860,
+              813,
+              912
             ]
           },
           {
-            "frame": 8812,
+            "frame": 42920,
             "bbox": [
-              446,
-              961,
-              748,
-              1055
+              700,
+              873,
+              895,
+              927
             ]
           },
           {
-            "frame": 8817,
+            "frame": 42925,
             "bbox": [
-              592,
-              963,
-              894,
-              1057
+              766,
+              874,
+              965,
+              939
+            ]
+          },
+          {
+            "frame": 42930,
+            "bbox": [
+              806,
+              881,
+              1008,
+              959
+            ]
+          },
+          {
+            "frame": 42935,
+            "bbox": [
+              863,
+              901,
+              1065,
+              988
             ]
           }
         ]
       },
       {
         "label": "AA1832EB",
+        "vehicle_type": "single_axle",
         "frame_start": 43440,
         "frame_end": 43455,
         "frames": [
           {
-            "frame": 8368,
+            "frame": 43440,
             "bbox": [
-              1399,
-              917,
-              1573,
-              961
+              709,
+              616,
+              923,
+              683
             ]
           },
           {
-            "frame": 8373,
+            "frame": 43445,
             "bbox": [
-              1360,
-              937,
-              1545,
-              986
+              866,
+              655,
+              1077,
+              724
             ]
           },
           {
-            "frame": 8378,
+            "frame": 43450,
             "bbox": [
-              1293,
-              954,
-              1494,
-              1007
+              1049,
+              676,
+              1264,
+              774
             ]
           },
           {
-            "frame": 8383,
+            "frame": 43455,
             "bbox": [
-              1218,
-              968,
-              1432,
-              1025
-            ]
-          },
-          {
-            "frame": 8388,
-            "bbox": [
-              1130,
-              981,
-              1358,
-              1046
+              1241,
+              721,
+              1440,
+              822
             ]
           }
         ]
       },
       {
         "label": "H1801AB",
+        "vehicle_type": "single_axle",
         "frame_start": 43605,
         "frame_end": 43645,
-        "frames": []
+        "frames": [
+          {
+            "frame": 43605,
+            "bbox": [
+              385,
+              539,
+              523,
+              580
+            ]
+          },
+          {
+            "frame": 43610,
+            "bbox": [
+              418,
+              563,
+              571,
+              607
+            ]
+          },
+          {
+            "frame": 43615,
+            "bbox": [
+              450,
+              598,
+              612,
+              641
+            ]
+          },
+          {
+            "frame": 43620,
+            "bbox": [
+              469,
+              618,
+              636,
+              665
+            ]
+          },
+          {
+            "frame": 43625,
+            "bbox": [
+              481,
+              628,
+              661,
+              677
+            ]
+          },
+          {
+            "frame": 43630,
+            "bbox": [
+              476,
+              636,
+              663,
+              691
+            ]
+          },
+          {
+            "frame": 43635,
+            "bbox": [
+              489,
+              649,
+              683,
+              706
+            ]
+          },
+          {
+            "frame": 43640,
+            "bbox": [
+              530,
+              670,
+              726,
+              728
+            ]
+          },
+          {
+            "frame": 43645,
+            "bbox": [
+              587,
+              692,
+              778,
+              765
+            ]
+          }
+        ]
       },
       {
         "label": "AB8509AY",
+        "vehicle_type": "single_axle",
         "frame_start": 46700,
         "frame_end": 46755,
-        "frames": []
+        "frames": [
+          {
+            "frame": 46720,
+            "bbox": [
+              491,
+              709,
+              607,
+              743
+            ]
+          },
+          {
+            "frame": 46730,
+            "bbox": [
+              499,
+              728,
+              640,
+              769
+            ]
+          },
+          {
+            "frame": 46740,
+            "bbox": [
+              513,
+              747,
+              674,
+              795
+            ]
+          },
+          {
+            "frame": 46745,
+            "bbox": [
+              532,
+              755,
+              708,
+              806
+            ]
+          },
+          {
+            "frame": 46750,
+            "bbox": [
+              587,
+              769,
+              775,
+              827
+            ]
+          },
+          {
+            "frame": 46755,
+            "bbox": [
+              666,
+              790,
+              856,
+              848
+            ]
+          }
+        ]
       },
       {
         "label": "AB8360DT",
+        "vehicle_type": "single_axle",
         "frame_start": 46820,
         "frame_end": 46845,
         "frames": [
           {
-            "frame": 1350,
+            "frame": 46820,
             "bbox": [
-              1291,
-              896,
-              1498,
-              984
+              770,
+              952,
+              959,
+              1006
             ]
           },
           {
-            "frame": 1355,
+            "frame": 46825,
             "bbox": [
-              1222,
-              906,
-              1438,
-              1001
-            ]
-          },
-          {
-            "frame": 1360,
-            "bbox": [
-              1156,
-              921,
-              1377,
-              1019
-            ]
-          },
-          {
-            "frame": 1365,
-            "bbox": [
-              1080,
+              770,
               931,
-              1306,
-              1038
+              963,
+              996
             ]
           },
           {
-            "frame": 1370,
+            "frame": 46830,
             "bbox": [
-              994,
-              948,
-              1222,
-              1057
+              775,
+              930,
+              973,
+              988
             ]
           },
           {
-            "frame": 1375,
+            "frame": 46835,
             "bbox": [
-              882,
-              962,
-              1112,
-              1080
+              802,
+              907,
+              1002,
+              971
+            ]
+          },
+          {
+            "frame": 46840,
+            "bbox": [
+              839,
+              874,
+              1034,
+              932
+            ]
+          },
+          {
+            "frame": 46845,
+            "bbox": [
+              859,
+              837,
+              1043,
+              892
             ]
           }
         ]
       },
       {
         "label": "AB8694VK",
+        "vehicle_type": "single_axle",
         "frame_start": 47195,
         "frame_end": 47210,
         "frames": []
@@ -5068,171 +5376,1919 @@
     "plates": [
       {
         "label": "K7193QB",
+        "vehicle_type": "bus",
         "frame_start": 0,
         "frame_end": 15,
         "frames": []
       },
       {
         "label": "K7826DC",
+        "vehicle_type": "bus",
         "frame_start": 95,
         "frame_end": 132,
-        "frames": []
+        "frames": [
+          {
+            "frame": 100,
+            "bbox": [
+              1142,
+              819,
+              1259,
+              872
+            ]
+          },
+          {
+            "frame": 105,
+            "bbox": [
+              1062,
+              802,
+              1173,
+              837
+            ]
+          },
+          {
+            "frame": 110,
+            "bbox": [
+              1005,
+              774,
+              1109,
+              808
+            ]
+          },
+          {
+            "frame": 115,
+            "bbox": [
+              962,
+              754,
+              1049,
+              784
+            ]
+          },
+          {
+            "frame": 120,
+            "bbox": [
+              930,
+              728,
+              1016,
+              759
+            ]
+          },
+          {
+            "frame": 125,
+            "bbox": [
+              917,
+              702,
+              989,
+              730
+            ]
+          },
+          {
+            "frame": 130,
+            "bbox": [
+              895,
+              682,
+              969,
+              707
+            ]
+          }
+        ]
       },
       {
         "label": "B2296VGA",
+        "vehicle_type": "bus",
         "frame_start": 1010,
         "frame_end": 1050,
-        "frames": []
+        "frames": [
+          {
+            "frame": 1010,
+            "bbox": [
+              1225,
+              705,
+              1299,
+              731
+            ]
+          },
+          {
+            "frame": 1015,
+            "bbox": [
+              1258,
+              711,
+              1340,
+              744
+            ]
+          },
+          {
+            "frame": 1020,
+            "bbox": [
+              1310,
+              723,
+              1383,
+              753
+            ]
+          },
+          {
+            "frame": 1025,
+            "bbox": [
+              1355,
+              733,
+              1436,
+              766
+            ]
+          },
+          {
+            "frame": 1030,
+            "bbox": [
+              1419,
+              746,
+              1498,
+              778
+            ]
+          },
+          {
+            "frame": 1035,
+            "bbox": [
+              1485,
+              757,
+              1572,
+              790
+            ]
+          },
+          {
+            "frame": 1040,
+            "bbox": [
+              1562,
+              767,
+              1658,
+              807
+            ]
+          },
+          {
+            "frame": 1045,
+            "bbox": [
+              1662,
+              780,
+              1753,
+              819
+            ]
+          },
+          {
+            "frame": 1050,
+            "bbox": [
+              1772,
+              800,
+              1858,
+              832
+            ]
+          }
+        ]
       },
       {
         "label": "F7501WA",
+        "vehicle_type": "bus",
         "frame_start": 2140,
         "frame_end": 2155,
-        "frames": []
+        "frames": [
+          {
+            "frame": 2140,
+            "bbox": [
+              1171,
+              915,
+              1261,
+              951
+            ]
+          },
+          {
+            "frame": 2145,
+            "bbox": [
+              1156,
+              943,
+              1262,
+              980
+            ]
+          },
+          {
+            "frame": 2150,
+            "bbox": [
+              1119,
+              968,
+              1231,
+              1014
+            ]
+          },
+          {
+            "frame": 2155,
+            "bbox": [
+              1076,
+              1005,
+              1188,
+              1051
+            ]
+          }
+        ]
       },
       {
         "label": "Z8744HJ",
+        "vehicle_type": "single_axle",
         "frame_start": 2460,
         "frame_end": 2515,
-        "frames": []
+        "frames": [
+          {
+            "frame": 2460,
+            "bbox": [
+              844,
+              723,
+              924,
+              755
+            ]
+          },
+          {
+            "frame": 2465,
+            "bbox": [
+              826,
+              729,
+              909,
+              758
+            ]
+          },
+          {
+            "frame": 2470,
+            "bbox": [
+              805,
+              737,
+              891,
+              770
+            ]
+          },
+          {
+            "frame": 2475,
+            "bbox": [
+              786,
+              744,
+              874,
+              775
+            ]
+          },
+          {
+            "frame": 2480,
+            "bbox": [
+              765,
+              753,
+              856,
+              784
+            ]
+          },
+          {
+            "frame": 2485,
+            "bbox": [
+              751,
+              757,
+              842,
+              788
+            ]
+          },
+          {
+            "frame": 2490,
+            "bbox": [
+              741,
+              758,
+              834,
+              792
+            ]
+          },
+          {
+            "frame": 2495,
+            "bbox": [
+              732,
+              761,
+              831,
+              792
+            ]
+          },
+          {
+            "frame": 2500,
+            "bbox": [
+              732,
+              758,
+              829,
+              788
+            ]
+          },
+          {
+            "frame": 2505,
+            "bbox": [
+              733,
+              757,
+              831,
+              785
+            ]
+          },
+          {
+            "frame": 2510,
+            "bbox": [
+              739,
+              752,
+              838,
+              785
+            ]
+          },
+          {
+            "frame": 2515,
+            "bbox": [
+              755,
+              746,
+              858,
+              780
+            ]
+          }
+        ]
       },
       {
         "label": "A9501U",
+        "vehicle_type": "single_axle",
         "frame_start": 3455,
         "frame_end": 3525,
-        "frames": []
+        "frames": [
+          {
+            "frame": 3455,
+            "bbox": [
+              1086,
+              793,
+              1166,
+              827
+            ]
+          },
+          {
+            "frame": 3460,
+            "bbox": [
+              1056,
+              793,
+              1141,
+              828
+            ]
+          },
+          {
+            "frame": 3465,
+            "bbox": [
+              1024,
+              797,
+              1108,
+              829
+            ]
+          },
+          {
+            "frame": 3470,
+            "bbox": [
+              991,
+              797,
+              1074,
+              830
+            ]
+          },
+          {
+            "frame": 3475,
+            "bbox": [
+              960,
+              802,
+              1040,
+              834
+            ]
+          },
+          {
+            "frame": 3480,
+            "bbox": [
+              917,
+              803,
+              1009,
+              836
+            ]
+          },
+          {
+            "frame": 3485,
+            "bbox": [
+              878,
+              805,
+              970,
+              839
+            ]
+          },
+          {
+            "frame": 3490,
+            "bbox": [
+              842,
+              807,
+              932,
+              843
+            ]
+          },
+          {
+            "frame": 3495,
+            "bbox": [
+              798,
+              812,
+              888,
+              851
+            ]
+          },
+          {
+            "frame": 3500,
+            "bbox": [
+              754,
+              818,
+              844,
+              860
+            ]
+          },
+          {
+            "frame": 3505,
+            "bbox": [
+              699,
+              826,
+              798,
+              865
+            ]
+          },
+          {
+            "frame": 3510,
+            "bbox": [
+              650,
+              827,
+              750,
+              875
+            ]
+          },
+          {
+            "frame": 3515,
+            "bbox": [
+              594,
+              838,
+              695,
+              885
+            ]
+          },
+          {
+            "frame": 3520,
+            "bbox": [
+              532,
+              850,
+              637,
+              896
+            ]
+          },
+          {
+            "frame": 3525,
+            "bbox": [
+              481,
+              857,
+              580,
+              909
+            ]
+          }
+        ]
       },
       {
         "label": "D7699AL",
+        "vehicle_type": "bus",
         "frame_start": 7331,
         "frame_end": 7396,
-        "frames": []
+        "frames": [
+          {
+            "frame": 7331,
+            "bbox": [
+              777,
+              812,
+              880,
+              849
+            ]
+          },
+          {
+            "frame": 7336,
+            "bbox": [
+              783,
+              818,
+              888,
+              856
+            ]
+          },
+          {
+            "frame": 7341,
+            "bbox": [
+              773,
+              824,
+              879,
+              860
+            ]
+          },
+          {
+            "frame": 7346,
+            "bbox": [
+              780,
+              828,
+              893,
+              866
+            ]
+          },
+          {
+            "frame": 7351,
+            "bbox": [
+              786,
+              829,
+              913,
+              871
+            ]
+          },
+          {
+            "frame": 7356,
+            "bbox": [
+              798,
+              840,
+              916,
+              881
+            ]
+          },
+          {
+            "frame": 7361,
+            "bbox": [
+              811,
+              848,
+              927,
+              889
+            ]
+          },
+          {
+            "frame": 7366,
+            "bbox": [
+              844,
+              828,
+              961,
+              872
+            ]
+          },
+          {
+            "frame": 7371,
+            "bbox": [
+              877,
+              782,
+              979,
+              820
+            ]
+          },
+          {
+            "frame": 7376,
+            "bbox": [
+              896,
+              771,
+              989,
+              802
+            ]
+          },
+          {
+            "frame": 7381,
+            "bbox": [
+              924,
+              769,
+              1009,
+              800
+            ]
+          },
+          {
+            "frame": 7386,
+            "bbox": [
+              938,
+              779,
+              1044,
+              812
+            ]
+          },
+          {
+            "frame": 7391,
+            "bbox": [
+              964,
+              790,
+              1058,
+              824
+            ]
+          },
+          {
+            "frame": 7396,
+            "bbox": [
+              988,
+              803,
+              1082,
+              837
+            ]
+          }
+        ]
       },
       {
         "label": "B7015NOW",
+        "vehicle_type": "bus",
         "frame_start": 8095,
         "frame_end": 8164,
-        "frames": []
+        "frames": [
+          {
+            "frame": 8095,
+            "bbox": [
+              113,
+              1042,
+              224,
+              1079
+            ]
+          },
+          {
+            "frame": 8100,
+            "bbox": [
+              133,
+              1038,
+              240,
+              1071
+            ]
+          },
+          {
+            "frame": 8105,
+            "bbox": [
+              148,
+              1027,
+              261,
+              1068
+            ]
+          },
+          {
+            "frame": 8110,
+            "bbox": [
+              178,
+              1019,
+              285,
+              1058
+            ]
+          },
+          {
+            "frame": 8115,
+            "bbox": [
+              207,
+              1008,
+              313,
+              1047
+            ]
+          },
+          {
+            "frame": 8120,
+            "bbox": [
+              234,
+              996,
+              339,
+              1037
+            ]
+          },
+          {
+            "frame": 8125,
+            "bbox": [
+              265,
+              986,
+              368,
+              1025
+            ]
+          },
+          {
+            "frame": 8130,
+            "bbox": [
+              302,
+              979,
+              407,
+              1018
+            ]
+          },
+          {
+            "frame": 8135,
+            "bbox": [
+              338,
+              964,
+              436,
+              1003
+            ]
+          },
+          {
+            "frame": 8140,
+            "bbox": [
+              371,
+              951,
+              473,
+              990
+            ]
+          },
+          {
+            "frame": 8145,
+            "bbox": [
+              394,
+              936,
+              492,
+              977
+            ]
+          },
+          {
+            "frame": 8150,
+            "bbox": [
+              409,
+              924,
+              504,
+              960
+            ]
+          },
+          {
+            "frame": 8155,
+            "bbox": [
+              410,
+              914,
+              508,
+              951
+            ]
+          },
+          {
+            "frame": 8160,
+            "bbox": [
+              417,
+              909,
+              511,
+              946
+            ]
+          }
+        ]
       },
       {
         "label": "AA7733QD",
+        "vehicle_type": "bus",
         "frame_start": 9736,
         "frame_end": 9776,
-        "frames": []
+        "frames": [
+          {
+            "frame": 9736,
+            "bbox": [
+              712,
+              679,
+              822,
+              714
+            ]
+          },
+          {
+            "frame": 9741,
+            "bbox": [
+              732,
+              689,
+              842,
+              724
+            ]
+          },
+          {
+            "frame": 9746,
+            "bbox": [
+              752,
+              681,
+              862,
+              716
+            ]
+          },
+          {
+            "frame": 9751,
+            "bbox": [
+              765,
+              664,
+              876,
+              699
+            ]
+          },
+          {
+            "frame": 9756,
+            "bbox": [
+              781,
+              656,
+              891,
+              691
+            ]
+          },
+          {
+            "frame": 9761,
+            "bbox": [
+              796,
+              656,
+              906,
+              691
+            ]
+          },
+          {
+            "frame": 9766,
+            "bbox": [
+              809,
+              656,
+              919,
+              691
+            ]
+          },
+          {
+            "frame": 9771,
+            "bbox": [
+              821,
+              651,
+              931,
+              686
+            ]
+          },
+          {
+            "frame": 9776,
+            "bbox": [
+              834,
+              648,
+              944,
+              683
+            ]
+          }
+        ]
       },
       {
         "label": "K7826DC",
+        "vehicle_type": "bus",
         "frame_start": 10855,
         "frame_end": 10890,
-        "frames": []
+        "frames": [
+          {
+            "frame": 10855,
+            "bbox": [
+              905,
+              738,
+              993,
+              776
+            ]
+          },
+          {
+            "frame": 10860,
+            "bbox": [
+              922,
+              744,
+              1010,
+              778
+            ]
+          },
+          {
+            "frame": 10865,
+            "bbox": [
+              942,
+              742,
+              1025,
+              777
+            ]
+          },
+          {
+            "frame": 10870,
+            "bbox": [
+              962,
+              727,
+              1040,
+              758
+            ]
+          },
+          {
+            "frame": 10875,
+            "bbox": [
+              983,
+              720,
+              1060,
+              752
+            ]
+          },
+          {
+            "frame": 10880,
+            "bbox": [
+              1010,
+              720,
+              1086,
+              752
+            ]
+          },
+          {
+            "frame": 10885,
+            "bbox": [
+              1041,
+              721,
+              1124,
+              754
+            ]
+          },
+          {
+            "frame": 10890,
+            "bbox": [
+              1081,
+              725,
+              1162,
+              758
+            ]
+          }
+        ]
       },
       {
         "label": "AB7128KA",
+        "vehicle_type": "bus",
         "frame_start": 11830,
         "frame_end": 11855,
-        "frames": []
+        "frames": [
+          {
+            "frame": 11830,
+            "bbox": [
+              462,
+              824,
+              585,
+              854
+            ]
+          },
+          {
+            "frame": 11835,
+            "bbox": [
+              451,
+              832,
+              594,
+              870
+            ]
+          },
+          {
+            "frame": 11840,
+            "bbox": [
+              450,
+              834,
+              594,
+              873
+            ]
+          },
+          {
+            "frame": 11845,
+            "bbox": [
+              467,
+              833,
+              606,
+              871
+            ]
+          },
+          {
+            "frame": 11850,
+            "bbox": [
+              475,
+              832,
+              615,
+              869
+            ]
+          },
+          {
+            "frame": 11855,
+            "bbox": [
+              524,
+              830,
+              638,
+              865
+            ]
+          }
+        ]
       },
       {
         "label": "AB7128KA",
+        "vehicle_type": "bus",
         "frame_start": 11875,
         "frame_end": 11885,
-        "frames": []
+        "frames": [
+          {
+            "frame": 11875,
+            "bbox": [
+              614,
+              785,
+              728,
+              819
+            ]
+          },
+          {
+            "frame": 11880,
+            "bbox": [
+              628,
+              782,
+              757,
+              815
+            ]
+          },
+          {
+            "frame": 11885,
+            "bbox": [
+              658,
+              777,
+              782,
+              811
+            ]
+          }
+        ]
       },
       {
         "label": "AG7016UE",
+        "vehicle_type": "bus",
         "frame_start": 14630,
         "frame_end": 14660,
-        "frames": []
+        "frames": [
+          {
+            "frame": 14630,
+            "bbox": [
+              836,
+              800,
+              928,
+              830
+            ]
+          },
+          {
+            "frame": 14635,
+            "bbox": [
+              829,
+              804,
+              930,
+              837
+            ]
+          },
+          {
+            "frame": 14640,
+            "bbox": [
+              829,
+              807,
+              932,
+              840
+            ]
+          },
+          {
+            "frame": 14645,
+            "bbox": [
+              822,
+              807,
+              929,
+              845
+            ]
+          },
+          {
+            "frame": 14650,
+            "bbox": [
+              821,
+              812,
+              934,
+              853
+            ]
+          },
+          {
+            "frame": 14655,
+            "bbox": [
+              815,
+              819,
+              941,
+              860
+            ]
+          },
+          {
+            "frame": 14660,
+            "bbox": [
+              826,
+              829,
+              944,
+              869
+            ]
+          }
+        ]
       },
       {
         "label": "B7294VGA",
+        "vehicle_type": "bus",
         "frame_start": 15285,
         "frame_end": 15310,
-        "frames": []
+        "frames": [
+          {
+            "frame": 15285,
+            "bbox": [
+              1272,
+              716,
+              1351,
+              747
+            ]
+          },
+          {
+            "frame": 15290,
+            "bbox": [
+              1315,
+              724,
+              1394,
+              756
+            ]
+          },
+          {
+            "frame": 15295,
+            "bbox": [
+              1369,
+              734,
+              1446,
+              767
+            ]
+          },
+          {
+            "frame": 15300,
+            "bbox": [
+              1428,
+              747,
+              1514,
+              779
+            ]
+          },
+          {
+            "frame": 15305,
+            "bbox": [
+              1499,
+              757,
+              1587,
+              792
+            ]
+          },
+          {
+            "frame": 15310,
+            "bbox": [
+              1584,
+              770,
+              1677,
+              805
+            ]
+          }
+        ]
       },
       {
         "label": "AA7654QD",
+        "vehicle_type": "bus",
         "frame_start": 15724,
         "frame_end": 15754,
-        "frames": []
+        "frames": [
+          {
+            "frame": 15724,
+            "bbox": [
+              722,
+              735,
+              795,
+              767
+            ]
+          },
+          {
+            "frame": 15729,
+            "bbox": [
+              740,
+              767,
+              825,
+              801
+            ]
+          },
+          {
+            "frame": 15734,
+            "bbox": [
+              786,
+              774,
+              877,
+              808
+            ]
+          },
+          {
+            "frame": 15739,
+            "bbox": [
+              840,
+              771,
+              931,
+              803
+            ]
+          },
+          {
+            "frame": 15744,
+            "bbox": [
+              891,
+              768,
+              976,
+              801
+            ]
+          },
+          {
+            "frame": 15749,
+            "bbox": [
+              938,
+              761,
+              1024,
+              797
+            ]
+          },
+          {
+            "frame": 15754,
+            "bbox": [
+              982,
+              758,
+              1062,
+              789
+            ]
+          }
+        ]
       },
       {
         "label": "Z7720ME",
+        "vehicle_type": "bus",
         "frame_start": 16550,
         "frame_end": 16575,
-        "frames": []
-      },
-      {
-        "label": "E7194YC",
-        "frame_start": 17175,
-        "frame_end": 17185,
-        "frames": []
+        "frames": [
+          {
+            "frame": 16550,
+            "bbox": [
+              377,
+              934,
+              467,
+              975
+            ]
+          },
+          {
+            "frame": 16555,
+            "bbox": [
+              367,
+              965,
+              457,
+              1006
+            ]
+          },
+          {
+            "frame": 16560,
+            "bbox": [
+              393,
+              969,
+              483,
+              1010
+            ]
+          },
+          {
+            "frame": 16565,
+            "bbox": [
+              425,
+              964,
+              515,
+              1005
+            ]
+          },
+          {
+            "frame": 16570,
+            "bbox": [
+              465,
+              955,
+              554,
+              994
+            ]
+          },
+          {
+            "frame": 16575,
+            "bbox": [
+              499,
+              943,
+              589,
+              984
+            ]
+          }
+        ]
       },
       {
         "label": "E7914YC",
+        "vehicle_type": "bus",
         "frame_start": 17175,
-        "frame_end": 17190,
-        "frames": []
+        "frame_end": 17185,
+        "frames": [
+          {
+            "frame": 17175,
+            "bbox": [
+              768,
+              962,
+              857,
+              999
+            ]
+          },
+          {
+            "frame": 17180,
+            "bbox": [
+              777,
+              981,
+              866,
+              1018
+            ]
+          },
+          {
+            "frame": 17185,
+            "bbox": [
+              783,
+              1002,
+              872,
+              1039
+            ]
+          }
+        ]
       },
       {
-        "label": "E7194YC",
+        "label": "E7914YC",
+        "vehicle_type": "bus",
+        "frame_start": 17175,
+        "frame_end": 17190,
+        "frames": [
+          {
+            "frame": 17175,
+            "bbox": [
+              768,
+              962,
+              857,
+              999
+            ]
+          },
+          {
+            "frame": 17180,
+            "bbox": [
+              777,
+              981,
+              866,
+              1018
+            ]
+          },
+          {
+            "frame": 17185,
+            "bbox": [
+              783,
+              1002,
+              872,
+              1039
+            ]
+          },
+          {
+            "frame": 17190,
+            "bbox": [
+              801,
+              1024,
+              890,
+              1061
+            ]
+          }
+        ]
+      },
+      {
+        "label": "E7914YC",
+        "vehicle_type": "bus",
         "frame_start": 17475,
         "frame_end": 17490,
-        "frames": []
+        "frames": [
+          {
+            "frame": 17475,
+            "bbox": [
+              561,
+              847,
+              645,
+              877
+            ]
+          },
+          {
+            "frame": 17480,
+            "bbox": [
+              592,
+              832,
+              676,
+              862
+            ]
+          },
+          {
+            "frame": 17485,
+            "bbox": [
+              620,
+              817,
+              705,
+              847
+            ]
+          },
+          {
+            "frame": 17490,
+            "bbox": [
+              644,
+              800,
+              728,
+              831
+            ]
+          }
+        ]
       },
       {
         "label": "K7193QB",
+        "vehicle_type": "bus",
         "frame_start": 18010,
         "frame_end": 18040,
-        "frames": []
+        "frames": [
+          {
+            "frame": 18010,
+            "bbox": [
+              1079,
+              853,
+              1184,
+              890
+            ]
+          },
+          {
+            "frame": 18015,
+            "bbox": [
+              1103,
+              861,
+              1207,
+              899
+            ]
+          },
+          {
+            "frame": 18020,
+            "bbox": [
+              1123,
+              873,
+              1232,
+              915
+            ]
+          },
+          {
+            "frame": 18025,
+            "bbox": [
+              1150,
+              888,
+              1265,
+              924
+            ]
+          },
+          {
+            "frame": 18030,
+            "bbox": [
+              1173,
+              902,
+              1302,
+              949
+            ]
+          },
+          {
+            "frame": 18035,
+            "bbox": [
+              1221,
+              920,
+              1340,
+              955
+            ]
+          },
+          {
+            "frame": 18040,
+            "bbox": [
+              1258,
+              931,
+              1383,
+              969
+            ]
+          }
+        ]
       },
       {
         "label": "G7501QD",
+        "vehicle_type": "bus",
         "frame_start": 18615,
         "frame_end": 18650,
-        "frames": []
+        "frames": [
+          {
+            "frame": 18615,
+            "bbox": [
+              633,
+              675,
+              727,
+              715
+            ]
+          },
+          {
+            "frame": 18620,
+            "bbox": [
+              637,
+              687,
+              730,
+              727
+            ]
+          },
+          {
+            "frame": 18625,
+            "bbox": [
+              668,
+              687,
+              772,
+              725
+            ]
+          },
+          {
+            "frame": 18630,
+            "bbox": [
+              713,
+              680,
+              817,
+              718
+            ]
+          },
+          {
+            "frame": 18635,
+            "bbox": [
+              759,
+              669,
+              863,
+              707
+            ]
+          },
+          {
+            "frame": 18640,
+            "bbox": [
+              805,
+              663,
+              909,
+              701
+            ]
+          },
+          {
+            "frame": 18645,
+            "bbox": [
+              844,
+              657,
+              948,
+              695
+            ]
+          },
+          {
+            "frame": 18650,
+            "bbox": [
+              877,
+              656,
+              980,
+              694
+            ]
+          }
+        ]
       },
       {
         "label": "R1734FA",
+        "vehicle_type": "bus",
         "frame_start": 19400,
         "frame_end": 19440,
-        "frames": []
-      },
-      {
-        "label": "R1734FA",
-        "frame_start": 18670,
-        "frame_end": 18680,
-        "frames": []
+        "frames": [
+          {
+            "frame": 19400,
+            "bbox": [
+              758,
+              725,
+              819,
+              759
+            ]
+          },
+          {
+            "frame": 19405,
+            "bbox": [
+              726,
+              781,
+              807,
+              817
+            ]
+          },
+          {
+            "frame": 19410,
+            "bbox": [
+              699,
+              824,
+              795,
+              865
+            ]
+          },
+          {
+            "frame": 19415,
+            "bbox": [
+              706,
+              833,
+              805,
+              878
+            ]
+          },
+          {
+            "frame": 19420,
+            "bbox": [
+              725,
+              828,
+              825,
+              867
+            ]
+          },
+          {
+            "frame": 19425,
+            "bbox": [
+              747,
+              822,
+              850,
+              860
+            ]
+          },
+          {
+            "frame": 19430,
+            "bbox": [
+              767,
+              811,
+              860,
+              852
+            ]
+          },
+          {
+            "frame": 19435,
+            "bbox": [
+              781,
+              803,
+              877,
+              841
+            ]
+          },
+          {
+            "frame": 19440,
+            "bbox": [
+              805,
+              791,
+              889,
+              827
+            ]
+          }
+        ]
       },
       {
         "label": "G7312OD",
+        "vehicle_type": "bus",
         "frame_start": 20145,
         "frame_end": 20160,
-        "frames": []
+        "frames": [
+          {
+            "frame": 20145,
+            "bbox": [
+              898,
+              777,
+              983,
+              814
+            ]
+          },
+          {
+            "frame": 20150,
+            "bbox": [
+              908,
+              790,
+              986,
+              825
+            ]
+          },
+          {
+            "frame": 20155,
+            "bbox": [
+              911,
+              796,
+              991,
+              830
+            ]
+          },
+          {
+            "frame": 20160,
+            "bbox": [
+              908,
+              806,
+              999,
+              843
+            ]
+          }
+        ]
       },
       {
         "label": "Z1903YC",
+        "vehicle_type": "minibus",
         "frame_start": 20382,
         "frame_end": 20407,
-        "frames": []
+        "frames": [
+          {
+            "frame": 20382,
+            "bbox": [
+              99,
+              829,
+              263,
+              916
+            ]
+          },
+          {
+            "frame": 20387,
+            "bbox": [
+              403,
+              803,
+              540,
+              865
+            ]
+          },
+          {
+            "frame": 20392,
+            "bbox": [
+              602,
+              777,
+              739,
+              839
+            ]
+          },
+          {
+            "frame": 20397,
+            "bbox": [
+              738,
+              760,
+              874,
+              821
+            ]
+          },
+          {
+            "frame": 20402,
+            "bbox": [
+              846,
+              747,
+              964,
+              796
+            ]
+          },
+          {
+            "frame": 20407,
+            "bbox": [
+              936,
+              734,
+              1035,
+              782
+            ]
+          }
+        ]
       },
       {
         "label": "AB7023WF",
+        "vehicle_type": "bus",
         "frame_start": 21320,
         "frame_end": 21360,
-        "frames": []
+        "frames": [
+          {
+            "frame": 21320,
+            "bbox": [
+              822,
+              706,
+              912,
+              738
+            ]
+          },
+          {
+            "frame": 21325,
+            "bbox": [
+              833,
+              693,
+              923,
+              725
+            ]
+          },
+          {
+            "frame": 21330,
+            "bbox": [
+              832,
+              680,
+              922,
+              712
+            ]
+          },
+          {
+            "frame": 21335,
+            "bbox": [
+              843,
+              675,
+              933,
+              707
+            ]
+          },
+          {
+            "frame": 21340,
+            "bbox": [
+              853,
+              674,
+              943,
+              706
+            ]
+          },
+          {
+            "frame": 21345,
+            "bbox": [
+              866,
+              672,
+              956,
+              704
+            ]
+          },
+          {
+            "frame": 21350,
+            "bbox": [
+              874,
+              665,
+              963,
+              697
+            ]
+          },
+          {
+            "frame": 21355,
+            "bbox": [
+              885,
+              660,
+              974,
+              692
+            ]
+          },
+          {
+            "frame": 21360,
+            "bbox": [
+              895,
+              659,
+              984,
+              691
+            ]
+          }
+        ]
       },
       {
         "label": "H7262OQ",
+        "vehicle_type": "bus",
         "frame_start": 21785,
         "frame_end": 21800,
-        "frames": []
+        "frames": [
+          {
+            "frame": 21785,
+            "bbox": [
+              1002,
+              967,
+              1089,
+              995
+            ]
+          },
+          {
+            "frame": 21790,
+            "bbox": [
+              971,
+              945,
+              1061,
+              974
+            ]
+          },
+          {
+            "frame": 21795,
+            "bbox": [
+              943,
+              928,
+              1038,
+              965
+            ]
+          },
+          {
+            "frame": 21800,
+            "bbox": [
+              919,
+              915,
+              1015,
+              946
+            ]
+          }
+        ]
       },
       {
         "label": "H7262OQ",
+        "vehicle_type": "bus",
         "frame_start": 21835,
         "frame_end": 21850,
-        "frames": []
+        "frames": [
+          {
+            "frame": 21835,
+            "bbox": [
+              903,
+              802,
+              980,
+              832
+            ]
+          },
+          {
+            "frame": 21840,
+            "bbox": [
+              905,
+              816,
+              976,
+              847
+            ]
+          },
+          {
+            "frame": 21845,
+            "bbox": [
+              901,
+              832,
+              978,
+              863
+            ]
+          },
+          {
+            "frame": 21850,
+            "bbox": [
+              901,
+              847,
+              978,
+              873
+            ]
+          }
+        ]
       }
     ]
   }
