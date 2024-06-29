@@ -33,7 +33,6 @@ class VideoDownloader:
                  youtube_downloader: str = "yt-dlp",
                  downloaded_videos_log: str = "downloaded_videos.txt") -> None:
         self.youtube_downloader = youtube_downloader
-        self._check_youtube_dl_version()
         self.downloaded_videos_log = downloaded_videos_log
 
         if isinstance(videos, Video):
@@ -115,6 +114,7 @@ class VideoDownloader:
             url = video.url
             logging.info(f"Downloading video to {download_path} from URL {url}")
             if 'youtube' in url or 'youtu.be' in url:
+                self._check_youtube_dl_version()
                 self._download_youtube_video(url, download_path)
             else:
                 logging.error(f"Downloader not implemented for URL {url}")
