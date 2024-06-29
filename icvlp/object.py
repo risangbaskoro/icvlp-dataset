@@ -214,6 +214,12 @@ class ICVLP(DataObject):
         if video.video_id in video_ids:
             raise KeyError(f"Video ID {video.video_id} is already in {self} videos.")
 
+    def get_video_by_id(self, video_id: str):
+        for video in self.videos:
+            if video.video_id == video_id:
+                return video
+        return None
+
     @classmethod
     def from_json(cls, json_filepath: str):
         r""" Populate videos with data from JSON file.
