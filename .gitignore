@@ -4,6 +4,9 @@
 # VSCode Config
 .vscode
 
+# macOS Directory Structure
+**/.DS_Store
+
 # Python Caches
 **/__pycache__/
 
