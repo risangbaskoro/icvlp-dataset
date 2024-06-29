@@ -13,11 +13,9 @@ class VideoDownloader:
     This class can be used to download video from :py:class:object.ICVLP instance or a list of py:class:object.Video
     instances.
 
-        icvlp = ICVLP.from_json('icvlp_v0.1.json')
-
-        downloader = VideoDownloader(videos=icvlp)
-
-        downloader.downloads
+        >>> icvlp = ICVLP.from_json('icvlp_v0.1.json')
+        >>> downloader = VideoDownloader(videos=icvlp)
+        >>> downloader.downloads()
 
     Args:
         videos (ICVLP, List[Video]): List of videos to download.
@@ -35,7 +33,7 @@ class VideoDownloader:
                  youtube_downloader: str = "yt-dlp",
                  downloaded_videos_log: str = "downloaded_videos.txt") -> None:
         self.youtube_downloader = youtube_downloader
-        self.__check_youtube_dl_version()
+        self._check_youtube_dl_version()
         self.downloaded_videos_log = downloaded_videos_log
 
         if isinstance(videos, Video):
@@ -58,7 +56,7 @@ class VideoDownloader:
         Returns:
             None
         """
-        self.__download_video(index)
+        self._download_video(index)
 
     def downloads(self) -> None:
         r"""Download all videos from ``videos`` attribute.
@@ -67,9 +65,9 @@ class VideoDownloader:
             None
         """
         for video in self.videos:
-            self.__download_video(video)
+            self._download_video(video)
 
-    def __check_youtube_dl_version(self) -> None:
+    def _check_youtube_dl_version(self) -> None:
         r"""Check and assert YouTube downloader version.
 
         Returns:
@@ -77,10 +75,10 @@ class VideoDownloader:
         """
         assert self.youtube_downloader in ["yt-dlp", "youtube-dl"], \
             f"Youtube downloader must be either yt-dlp or youtube-dl. Got {self.youtube_downloader}."
-        # version = os.popen(f'{self.youtube_downloader} --version').read()
-        # assert version, f"{self.youtube_downloader} cannot be found in PATH. Please verify your installation."
+        version = os.popen(f'{self.youtube_downloader} --version').read()
+        assert version, f"{self.youtube_downloader} cannot be found in PATH. Please verify your installation."
 
-    def __download_video(self, index: Union[Video, int]) -> None:
+    def _download_video(self, index: Union[Video, int]) -> None:
         r"""Download a video from ``videos`` attribute.
 
         Args:
@@ -117,7 +115,7 @@ class VideoDownloader:
             url = video.url
             logging.info(f"Downloading video to {download_path} from URL {url}")
             if 'youtube' in url or 'youtu.be' in url:
-                self.__download_youtube_video(url, download_path)
+                self._download_youtube_video(url, download_path)
             else:
                 logging.error(f"Downloader not implemented for URL {url}")
 
@@ -125,7 +123,7 @@ class VideoDownloader:
         with open(self.downloaded_videos_log, 'a') as f:
             f.write(f"{download_path}\n")
 
-    def __download_youtube_video(self, url: str, download_path: str) -> None:
+    def _download_youtube_video(self, url: str, download_path: str) -> None:
         r"""Download a YouTube video and save it to download path using instance's YouTube downloader.
 
         Args:
