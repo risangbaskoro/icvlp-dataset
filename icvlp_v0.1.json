@@ -7,7 +7,7 @@
     "plates": [
       {
         "label": "AB8381FU",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 750,
         "frame_end": 810,
         "frames": [
@@ -132,7 +132,7 @@
       },
       {
         "label": "AB8812VK",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 960,
         "frame_end": 1020,
         "frames": [
@@ -257,7 +257,7 @@
       },
       {
         "label": "AB8360DT",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 1350,
         "frame_end": 1376,
         "frames": [
@@ -319,7 +319,7 @@
       },
       {
         "label": "AB8667EU",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 1920,
         "frame_end": 1967,
         "frames": [
@@ -417,7 +417,7 @@
       },
       {
         "label": "AB8437BY",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 2640,
         "frame_end": 2730,
         "frames": [
@@ -596,7 +596,7 @@
       },
       {
         "label": "G1618JA",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 2823,
         "frame_end": 2898,
         "frames": [
@@ -748,7 +748,7 @@
       },
       {
         "label": "AB9260HN",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 3015,
         "frame_end": 3075,
         "frames": [
@@ -873,7 +873,7 @@
       },
       {
         "label": "AB8921ZN",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 3480,
         "frame_end": 3540,
         "frames": [
@@ -998,7 +998,7 @@
       },
       {
         "label": "AB8715AY",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 3810,
         "frame_end": 3870,
         "frames": [
@@ -1123,7 +1123,7 @@
       },
       {
         "label": "AD1486ZJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 4020,
         "frame_end": 4080,
         "frames": [
@@ -1248,7 +1248,7 @@
       },
       {
         "label": "BE9294BA",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 4135,
         "frame_end": 4175,
         "frames": [
@@ -1337,7 +1337,7 @@
       },
       {
         "label": "AD1322KJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 6050,
         "frame_end": 6075,
         "frames": [
@@ -1399,14 +1399,14 @@
       },
       {
         "label": "AD1306XJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 6485,
         "frame_end": 6530,
         "frames": []
       },
       {
         "label": "AD1623ZJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 6760,
         "frame_end": 6785,
         "frames": [
@@ -1468,7 +1468,7 @@
       },
       {
         "label": "AD1640LB",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 6850,
         "frame_end": 6890,
         "frames": [
@@ -1557,7 +1557,7 @@
       },
       {
         "label": "AD1322KJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 7255,
         "frame_end": 7290,
         "frames": [
@@ -1637,7 +1637,7 @@
       },
       {
         "label": "AD1377HJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 7370,
         "frame_end": 7430,
         "frames": [
@@ -1762,7 +1762,7 @@
       },
       {
         "label": "AD1306XJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 7885,
         "frame_end": 7915,
         "frames": [
@@ -1833,7 +1833,7 @@
       },
       {
         "label": "AD1623ZJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 8115,
         "frame_end": 8130,
         "frames": [
@@ -1877,7 +1877,7 @@
       },
       {
         "label": "AA1832EB",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 8368,
         "frame_end": 8390,
         "frames": [
@@ -1930,7 +1930,7 @@
       },
       {
         "label": "AB8510EU",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 8765,
         "frame_end": 8790,
         "frames": [
@@ -1992,7 +1992,7 @@
       },
       {
         "label": "AD1641PJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 8797,
         "frame_end": 8817,
         "frames": [
@@ -2045,7 +2045,7 @@
       },
       {
         "label": "AB8557FU",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 9680,
         "frame_end": 9715,
         "frames": [
@@ -2125,7 +2125,7 @@
       },
       {
         "label": "AB8489FU",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 10130,
         "frame_end": 10165,
         "frames": [
@@ -2205,7 +2205,7 @@
       },
       {
         "label": "AB8689OE",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 10445,
         "frame_end": 10470,
         "frames": [
@@ -2267,7 +2267,7 @@
       },
       {
         "label": "H1912GY",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 10685,
         "frame_end": 10715,
         "frames": [
@@ -2338,7 +2338,7 @@
       },
       {
         "label": "B9856PDD",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 11000,
         "frame_end": 11070,
         "frames": [
@@ -2472,7 +2472,7 @@
       },
       {
         "label": "AB9285FN",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 11745,
         "frame_end": 11790,
         "frames": [
@@ -2516,7 +2516,7 @@
       },
       {
         "label": "AB8651OE",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 12365,
         "frame_end": 12415,
         "frames": [
@@ -2623,7 +2623,7 @@
       },
       {
         "label": "AB9285FN",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 12590,
         "frame_end": 12665,
         "frames": [
@@ -2775,7 +2775,7 @@
       },
       {
         "label": "AB8250ZY",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 15825,
         "frame_end": 15905,
         "frames": [
@@ -3124,7 +3124,7 @@
       },
       {
         "label": "G1618JA",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 17025,
         "frame_end": 17045,
         "frames": [
@@ -3177,7 +3177,7 @@
       },
       {
         "label": "AB9620HN",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 17050,
         "frame_end": 17110,
         "frames": [
@@ -3302,7 +3302,7 @@
       },
       {
         "label": "AB8629OE",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 20870,
         "frame_end": 20920,
         "frames": [
@@ -3409,7 +3409,7 @@
       },
       {
         "label": "AB8775OE",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 21020,
         "frame_end": 21100,
         "frames": [
@@ -3570,7 +3570,7 @@
       },
       {
         "label": "AB8921ZN",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 21120,
         "frame_end": 21145,
         "frames": [
@@ -3623,7 +3623,7 @@
       },
       {
         "label": "AB9402GD",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 21865,
         "frame_end": 21900,
         "frames": [
@@ -3703,7 +3703,7 @@
       },
       {
         "label": "AB8167JH",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 22490,
         "frame_end": 22530,
         "frames": [
@@ -3792,7 +3792,7 @@
       },
       {
         "label": "AB8421FU",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 22760,
         "frame_end": 22810,
         "frames": [
@@ -3899,7 +3899,7 @@
       },
       {
         "label": "AB8520QF",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 23895,
         "frame_end": 23920,
         "frames": [
@@ -3961,7 +3961,7 @@
       },
       {
         "label": "AB8905UK",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 24842,
         "frame_end": 24880,
         "frames": [
@@ -4041,7 +4041,7 @@
       },
       {
         "label": "AD1640LB",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 25158,
         "frame_end": 25198,
         "frames": [
@@ -4130,7 +4130,7 @@
       },
       {
         "label": "AB8266YK",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 26710,
         "frame_end": 26770,
         "frames": [
@@ -4344,7 +4344,7 @@
       },
       {
         "label": "BE9294BA",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 26930,
         "frame_end": 26945,
         "frames": [
@@ -4388,7 +4388,7 @@
       },
       {
         "label": "R1431RK",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 31880,
         "frame_end": 31900,
         "frames": [
@@ -4432,7 +4432,7 @@
       },
       {
         "label": "AB8184SK",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 32305,
         "frame_end": 32370,
         "frames": [
@@ -4566,7 +4566,7 @@
       },
       {
         "label": "AD1806JQ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 32920,
         "frame_end": 32945,
         "frames": [
@@ -4628,7 +4628,7 @@
       },
       {
         "label": "AB8443CT",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 33940,
         "frame_end": 33985,
         "frames": [
@@ -4726,7 +4726,7 @@
       },
       {
         "label": "AB9196NB",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 35790,
         "frame_end": 35830,
         "frames": [
@@ -4815,7 +4815,7 @@
       },
       {
         "label": "AD1632LU",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 38531,
         "frame_end": 38555,
         "frames": [
@@ -4868,7 +4868,7 @@
       },
       {
         "label": "AB8527AU",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 40160,
         "frame_end": 40195,
         "frames": [
@@ -4948,7 +4948,7 @@
       },
       {
         "label": "AD1450ZJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 42050,
         "frame_end": 42090,
         "frames": [
@@ -5019,21 +5019,21 @@
       },
       {
         "label": "AD1337HJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 42500,
         "frame_end": 42540,
         "frames": []
       },
       {
         "label": "AD8689OE",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 42810,
         "frame_end": 42845,
         "frames": []
       },
       {
         "label": "AD1641PJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 42900,
         "frame_end": 42935,
         "frames": [
@@ -5104,7 +5104,7 @@
       },
       {
         "label": "AA1832EB",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 43440,
         "frame_end": 43455,
         "frames": [
@@ -5148,7 +5148,7 @@
       },
       {
         "label": "H1801AB",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 43605,
         "frame_end": 43645,
         "frames": [
@@ -5237,7 +5237,7 @@
       },
       {
         "label": "AB8509AY",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 46700,
         "frame_end": 46755,
         "frames": [
@@ -5299,7 +5299,7 @@
       },
       {
         "label": "AB8360DT",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 46820,
         "frame_end": 46845,
         "frames": [
@@ -5361,7 +5361,7 @@
       },
       {
         "label": "AB8694VK",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 47195,
         "frame_end": 47210,
         "frames": []
@@ -5587,7 +5587,7 @@
       },
       {
         "label": "Z8744HJ",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 2460,
         "frame_end": 2515,
         "frames": [
@@ -5703,7 +5703,7 @@
       },
       {
         "label": "A9501U",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 3455,
         "frame_end": 3525,
         "frames": [
@@ -7898,7 +7898,7 @@
     "plates": [
       {
         "label": "KT9239EO",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 375,
         "frame_end": 470,
         "frames": [
@@ -8086,7 +8086,7 @@
       },
       {
         "label": "KT8954EK",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 520,
         "frame_end": 560,
         "frames": [
@@ -8175,7 +8175,7 @@
       },
       {
         "label": "KT8239EO",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 10146,
         "frame_end": 10156,
         "frames": [
@@ -8210,7 +8210,7 @@
       },
       {
         "label": "DA8061HA",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 10870,
         "frame_end": 10910,
         "frames": [
@@ -8307,7 +8307,7 @@
     "plates": [
       {
         "label": "BA9007YE",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 190,
         "frame_end": 260,
         "frames": [
@@ -8450,7 +8450,7 @@
       },
       {
         "label": "BM8371CH",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 2080,
         "frame_end": 2150,
         "frames": [
@@ -8593,7 +8593,7 @@
       },
       {
         "label": "B9130SYT",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 3275,
         "frame_end": 3340,
         "frames": [
@@ -8727,7 +8727,7 @@
       },
       {
         "label": "BK9258EG",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 3310,
         "frame_end": 3395,
         "frames": [
@@ -8897,7 +8897,7 @@
       },
       {
         "label": "BM96670BO",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 8355,
         "frame_end": 8445,
         "frames": [
@@ -9076,7 +9076,7 @@
       },
       {
         "label": "BM9285EO",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 11995,
         "frame_end": 12075,
         "frames": [
@@ -9237,7 +9237,7 @@
       },
       {
         "label": "B9152NYV",
-        "vehicle_type": "single_axle",
+        "vehicle_type": "crank_truck",
         "frame_start": 16545,
         "frame_end": 16600,
         "frames": [
