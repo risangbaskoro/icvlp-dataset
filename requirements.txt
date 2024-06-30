@@ -1,0 +1,5 @@
+setuptools~=68.2.0
+ultralytics~=8.2.45
+opencv-python~=4.10.0.84
+numpy~=1.26.4
+tqdm~=4.66.4

@@ -18,3 +18,12 @@
 # Videos
 /videos/
 downloaded_videos.txt
+
+# Extracted Frames
+/frames/
+
+# Extracted Plates
+/plates/
+
+# Annotations
+/annotations/
